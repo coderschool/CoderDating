@@ -1,4 +1,3 @@
 class User < ActiveRecord::Base
-  include Clearance::User
-
+  has_secure_password
 end
