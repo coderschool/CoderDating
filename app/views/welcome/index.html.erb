@@ -5,11 +5,14 @@
           <div class="row">
               <div class="col-sm-4">
                   <h3>The Dating Site for Ruby Experts</h3>
-                  <p>CoderDating is the first dating website that only allows experienced Ruby on Rails engineers to sign up.</p>
+                  <p>CoderDating is the first dating website just for experienced Ruby on Rails engineers.</p>
                   <div class="signup-form">
                     <%= form_for(User.new) do |f| %>
                       <div class="form-group">
                         <%= f.text_field 'email', class: 'form-control', placeholder: 'Your E-mail' %>
+                      </div>
+                       <div class="form-group">
+                        <%= f.text_field 'name', class: 'form-control', placeholder: 'Name' %>
                       </div>
                       <div class="form-group">
                         <div class="half-width">
