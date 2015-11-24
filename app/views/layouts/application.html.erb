@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>    
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+ <!--  <div id="header">
+    <% if signed_in? -%>
+      <%= button_to t(".sign_out"), sign_out_path, method: :delete %>
+    <% else -%>
+      <%= link_to t(".sign_in"), sign_in_path %>
+    <% end -%>
+  </div>
+
+  <div id="flash">
+    <% flash.each do |key, value| -%>
+      <div id="flash_<%= key %>"><%=h value %></div>
+    <% end %>
+  </div> -->
+
+
+  <nav class="navbar navbar-light bg-faded">
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#nav-content">
+      &#9776;
+    </button>
+    <!-- Nav Content -->
+    <div class="collapse navbar-toggleable-xs" id="nav-content">
+      <a class="navbar-brand" href="#"><%= image_tag 'logo-small' %></a>
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 3</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <%= yield %>
+
+  <footer class="footer-12">
+    <div class="container">
+        Made with <%= image_tag('heart') %> in Sai Gon
+    </div>
+  </footer>    
+
+</body>
+</html>

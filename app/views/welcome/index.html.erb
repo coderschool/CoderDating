@@ -1,0 +1,37 @@
+
+  <section class="header-11-sub">
+      <div class="background">&nbsp;</div>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-4">
+                  <h3>The Dating Site for Ruby Experts</h3>
+                  <p>CoderDating is the first dating website that only allows experienced Ruby on Rails engineers to sign up.</p>
+                  <div class="signup-form">
+                    <%= form_for(User.new) do |f| %>
+                      <div class="form-group">
+                        <%= f.text_field 'email', class: 'form-control', placeholder: 'Your E-mail' %>
+                      </div>
+                      <div class="form-group">
+                        <div class="half-width">
+                          <%= f.password_field 'password', class: 'form-control', placeholder: 'Password' %>
+                        </div>
+                        <div class="half-width">
+                          <%= f.password_field 'password_confirmation', class: 'form-control', placeholder: 'Confirmation' %>          
+                        </div>  
+                      </div>
+                      <div class="form-group">
+                          <%= f.submit 'Sign Up', class: 'btn btn-block btn-info' %>
+                      </div>    
+                    <% end %>
+                  </div>  
+                  <div class="additional-links">By signing up you agree to <a href="#">Terms of Use</a> and <a href="#">Privacy</a></div>
+              </div>
+              <div class="col-sm-7 col-sm-offset-1 player-wrapper">
+                  <div class="player">
+                      <%= image_tag 'hero' %>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
