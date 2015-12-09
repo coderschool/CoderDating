@@ -2,16 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.card {
-  text-align: center;
+.users-index {
   padding-top: 20px;
-
-  &.card-male {
-    background-color: lightblue;
-  }
   
-  &.card-female {
-  background-color: lightpink;
+  .card {
+    text-align: center;
+    padding-top: 20px;
+
+    &.card-male {
+      background-color: lightblue;
+    }
+    
+    &.card-female {
+      background-color: lightpink;
+    }
   }
 }
 
