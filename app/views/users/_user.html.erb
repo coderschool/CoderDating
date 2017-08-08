@@ -1,7 +1,7 @@
 <div class="col-xs-12 col-md-4">
   <div class="card card-<%= cycle('male', 'female') %>">
-    <%= image_tag user.try(:image_url) %>
     <div class="card-block">
+      <%= image_tag user.try(:image_url) %>
       <h4 class="card-title"><%= user.try(:name) %></h4>
       <a href="#" class="btn btn-primary">Button</a>
     </div>

@@ -4,18 +4,16 @@
 
 .users-index {
   padding-top: 20px;
-  
+
   .card {
     text-align: center;
-    padding-top: 20px;
 
     &.card-male {
       background-color: lightblue;
     }
-    
+
     &.card-female {
       background-color: lightpink;
     }
   }
 }
-

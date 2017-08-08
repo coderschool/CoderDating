@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.2'
+gem 'rails', '5.1.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 gem 'puma'
@@ -23,13 +23,11 @@ gem 'jbuilder', '~> 2.5'
 # bundle exec rake doc:rails generates the API under doc/api.
 # gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'bootstrap', '~> 4.0.0.alpha2'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
-
-gem 'httparty'
 
 # Use ActiveModel has_secure_password
 # use platforms: [:ruby] to make it work for windows
@@ -57,3 +55,5 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "http"

@@ -6,16 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
-  <nav class="navbar navbar-light bg-faded">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 
     <!-- Toggle Button -->
-    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#nav-content">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content">
       &#9776;
     </button>
     <!-- Nav Content -->
-    <div class="collapse navbar-toggleable-xs" id="nav-content">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <a class="navbar-brand" href="/"><%= image_tag 'logo-small.png' %></a>
-      <ul class="nav navbar-nav">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">Sign Up</a>
         </li>
