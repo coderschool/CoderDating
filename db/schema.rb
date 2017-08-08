@@ -16,13 +16,13 @@ ActiveRecord::Schema.define(version: 20151123151042) do
   enable_extension "plpgsql"
 
   create_table "users", force: :cascade do |t|
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.string   "email",           null: false
-    t.string   "password_digest", null: false
-    t.string   "name",            null: false
-    t.string   "image_url"
-    t.index ["email"], name: "index_users_on_email", using: :btree
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "email", null: false
+    t.string "password_digest", null: false
+    t.string "name", null: false
+    t.string "image_url"
+    t.index ["email"], name: "index_users_on_email"
   end
 
 end
