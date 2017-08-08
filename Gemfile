@@ -24,14 +24,11 @@ gem 'jbuilder', '~> 2.5'
 # gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
-
-source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.1.0'
-end
+gem 'tether-rails'
 
 # Use ActiveModel has_secure_password
 # use platforms: [:ruby] to make it work for windows
-gem 'bcrypt', platforms: [:ruby]
+gem 'bcrypt'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
